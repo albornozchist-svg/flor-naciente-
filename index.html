@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#246b4b">
+<title>Flor Naciente | Gestión agrícola</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="#inicio"><span class="brand-flower">✿</span><span><b>Flor Naciente</b><small>Tu campo, mejor cuidado</small></span></a>
+  <div class="side-label">MENÚ PRINCIPAL</div>
+  <nav id="nav">
+    <button class="nav-item active" data-page="inicio">⌂ <span>Inicio</span></button>
+    <button class="nav-item" data-page="parcelas">▧ <span>Mis parcelas</span></button>
+    <button class="nav-item" data-page="diagnostico">◎ <span>Diagnóstico</span></button>
+    <button class="nav-item" data-page="riego">♧ <span>Riego y clima</span></button>
+    <button class="nav-item" data-page="calendario">▦ <span>Calendario</span></button>
+    <button class="nav-item" data-page="asistente">✧ <span>Asistente agrícola</span></button>
+  </nav>
+  <div class="sidebar-bottom"><div class="help-card"><span>🌱</span><b>Tu campo merece cuidado</b><p>Registra tus labores y mantén tu información organizada.</p></div><small>Flor Naciente · Primera versión</small></div>
+</aside>
+<main class="main">
+<header class="topbar"><button class="mobile-menu" id="menuToggle">☰</button><div><span class="eyebrow">PLATAFORMA AGRÍCOLA</span><h1 id="pageTitle">Inicio</h1></div><div class="top-right"><span class="location">📍 Végueta, Huaura</span><div class="avatar">A</div></div></header>
+<div class="content" id="app"></div>
+<footer>Flor Naciente · Herramienta de apoyo para la gestión agrícola. Verifica siempre las recomendaciones técnicas antes de aplicarlas.</footer>
+</main>
+<button class="flor-launcher" id="florLauncher" aria-label="Abrir a Flor"><span class="cantuta">✿</span><span class="flor-tip">¿Necesitas ayuda?</span></button>
+<section class="flor-panel hidden" id="florPanel" aria-label="Asistente Flor"><header><div class="flor-avatar">✿</div><div><b>Flor</b><small>Tu compañera agrícola</small></div><button id="closeFlor" class="icon-btn">×</button></header><div class="flor-body" id="florMessages"><div class="bubble flor-bubble">¡Hola! Soy Flor 🌺. Puedo ayudarte a recorrer la plataforma y organizar la información de tu campo. ¿Qué necesitas?</div></div><div class="flor-actions"><button id="speakFlor" class="soft-btn">🔊 Escuchar</button><button id="stopFlor" class="soft-btn">■ Detener voz</button></div><div class="voice-status" id="florVoiceStatus" aria-live="polite"></div><form id="florForm" class="chat-form"><input id="florInput" placeholder="Escribe o habla con Flor..." autocomplete="off"><button type="button" id="florMic" class="mic-btn" aria-label="Hablar con Flor" title="Hablar con Flor">🎙️</button><button aria-label="Enviar">➤</button></form><small class="disclaimer">Mis respuestas son orientativas. No reemplazan la evaluación de un especialista.</small></section>
+<script src="app.js"></script>
+</body></html>
