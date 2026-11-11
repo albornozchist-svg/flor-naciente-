@@ -90,7 +90,7 @@ Reglas: una foto no basta para confirmar muchos diagnósticos. No inventes nombr
   }
 };
 
-function json(data, status = 200) {
+generationConfig: { maxOutputTokens: 1200 } {
   return new Response(JSON.stringify(data), {
     status,
     headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" }
