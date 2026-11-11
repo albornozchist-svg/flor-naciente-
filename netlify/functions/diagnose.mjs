@@ -75,7 +75,7 @@ Reglas: una foto no basta para confirmar muchos diagnósticos. No inventes nombr
     const result = await upstream.json().catch(() => ({}));
     if (!upstream.ok) {
       const message = result?.error?.message || "El servicio de análisis no pudo procesar la fotografía.";
-      console.error("Error de Gemini:", upstream.status, message);
+     console.error("Error de Gemini:", upstream.status, message);
       const status = upstream.status === 429 ? 429 : upstream.status === 400 ? 400 : 502;
       return json({ error: friendlyGoogleError(message, upstream.status) }, status);
     }
