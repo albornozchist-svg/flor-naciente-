@@ -68,7 +68,7 @@ Reglas: una foto no basta para confirmar muchos diagnósticos. No inventes nombr
           { text: prompt },
           { inlineData: { mimeType, data: imageBase64 } }
         ] }],
-        generationConfig: { temperature: 0.2, maxOutputTokens: 1200 }
+        generationConfig: { maxOutputTokens: 1200 }
       })
     });
 
